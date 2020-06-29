@@ -4,7 +4,7 @@
     *   Javascript Functions
     *   ------------------------------------------------
     *   WP Mobile Menu
-    *   Copyright WP Mobile Menu 2018 - http://www.wpmobilemenu.com
+    *   Copyright WP Mobile Menu 2018 - https://www.wpmobilemenu.com
     *
     */
 

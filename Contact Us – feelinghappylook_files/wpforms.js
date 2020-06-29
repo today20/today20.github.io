@@ -105,14 +105,14 @@ var wpforms = window.wpforms || ( function( document, window, $ ) {
 					$( this ).attr( 'name', 'wpf-temp-' + random );
 				} );
 
-				// Prepend URL field contents with http:// if user input doesn't contain a schema.
+				// Prepend URL field contents with https:// if user input doesn't contain a schema.
 				$( '.wpforms-validate input[type=url]' ).change( function() {
 					var url = $( this ).val();
 					if ( ! url ) {
 						return false;
 					}
-					if ( url.substr( 0, 7 ) !== 'http://' && url.substr( 0, 8 ) !== 'https://' ) {
-						$( this ).val( 'http://' + url );
+					if ( url.substr( 0, 7 ) !== 'https://' && url.substr( 0, 8 ) !== 'https://' ) {
+						$( this ).val( 'https://' + url );
 					}
 				} );
 
@@ -1217,7 +1217,7 @@ var wpforms = window.wpforms || ( function( document, window, $ ) {
 		/**
 		 * Format number.
 		 *
-		 * @link http://locutus.io/php/number_format/
+		 * @link https://locutus.io/php/number_format/
 		 * @since 1.2.6
 		 */
 		numberFormat: function( number, decimals, decimalSep, thousandsSep ) {
@@ -1250,7 +1250,7 @@ var wpforms = window.wpforms || ( function( document, window, $ ) {
 		/**
 		 * Empty check similar to PHP.
 		 *
-		 * @link http://locutus.io/php/empty/
+		 * @link https://locutus.io/php/empty/
 		 * @since 1.2.6
 		 */
 		empty: function( mixedVar ) {
@@ -1288,7 +1288,7 @@ var wpforms = window.wpforms || ( function( document, window, $ ) {
 
 			if ( ( ( ! window.hasRequiredConsent && typeof wpforms_settings !== 'undefined' && wpforms_settings.uuid_cookie ) || ( window.hasRequiredConsent && window.hasRequiredConsent() ) ) && ! app.getCookie( '_wpfuuid' ) ) {
 
-				// Generate UUID - http://stackoverflow.com/a/873856/1489528
+				// Generate UUID - https://stackoverflow.com/a/873856/1489528
 				var s         = new Array( 36 ),
 					hexDigits = '0123456789abcdef',
 					uuid;
